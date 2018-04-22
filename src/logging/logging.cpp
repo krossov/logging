@@ -1,6 +1,6 @@
 #include "logging.h"
 
-namespace log {
+namespace krv {
     Logging::~Logging()
     {
         out_ << std::flush;

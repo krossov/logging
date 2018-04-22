@@ -5,7 +5,7 @@
 #include <vector>
 #include <mutex>
 
-namespace log {
+namespace krv {
 void check_log(const std::string& log);
 // This test shows that log should be atomic otherwise log messages are mixed
 // together

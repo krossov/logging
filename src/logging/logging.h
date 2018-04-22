@@ -3,7 +3,7 @@
 #include <string>
 #include <iostream>
 
-namespace log {
+namespace krv {
 class Logging
 {
     public:

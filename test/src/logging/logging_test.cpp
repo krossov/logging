@@ -18,6 +18,7 @@ TEST(LoggingTest, trace) {
         for (int i = 0; i < 10; ++i) {
             std::stringstream sstring;
 
+            // Resource Acquisition is Initialization
             std::lock_guard<std::mutex> lock(log_mutex);
             logging.trace("thread1 :\n");
             sstring << "Thread1: Interation n: " << i << "\n";
@@ -29,6 +30,7 @@ TEST(LoggingTest, trace) {
         for (int i = 0; i < 10; ++i) {
             std::stringstream sstring;
             
+            // Resource Acquisition is Initialization
             std::lock_guard<std::mutex> lock(log_mutex);
             logging.trace("thread2 :\n");
             sstring << "Thread2: Interation n: " << i << "\n";

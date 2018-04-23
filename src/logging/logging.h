@@ -2,6 +2,7 @@
 
 #include <string>
 #include <iostream>
+#include "logging_message.h"
 
 namespace krv {
 class Logging
@@ -13,6 +14,7 @@ class Logging
 
         virtual ~Logging();        
         void trace(const std::string& str);
+        LoggingMessage new_message();
 
     private:
     std::ostream& out_;

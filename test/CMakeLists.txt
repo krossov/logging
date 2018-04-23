@@ -5,7 +5,8 @@ project(test_runner)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 
-set(SOURCE_FILES src/main.cpp src/logging/logging_test.cpp)
+set(SOURCE_FILES src/main.cpp src/logging/logging_test.cpp
+                              src/logging/logging_message_test.cpp)
 
 set(GOOGLE_TEST_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/test/lib/googletest/include)
 

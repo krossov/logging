@@ -3,7 +3,8 @@ project(logging C CXX)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
-set(SOURCE_FILES logging.h logging.cpp)
+set(SOURCE_FILES logging.h logging.cpp
+                 logging_message.h logging_message.cpp)
 
 add_library(logging SHARED STATIC ${SOURCE_FILES})
 

@@ -10,4 +10,10 @@ namespace krv {
     {
         out_ << str;
     }
+
+    LoggingMessage Logging::new_message()
+    {
+        LoggingMessage message(*this);
+        return std::move(message);
+    }
 }
